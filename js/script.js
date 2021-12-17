@@ -45,7 +45,7 @@ const app = new Vue (
           text: this.todoNew,
           done: false
         }
-        this.todos.push(object);
+        this.todos.unshift(object);
       },
       deleteTodo: function (index) {
         this.todos.splice(index, 1);
