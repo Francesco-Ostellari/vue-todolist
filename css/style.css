@@ -63,5 +63,11 @@
   border-radius: 2em;
   padding: 1em;
   margin-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todos ul li i {
+  font-size: 1.5em;
 }
 
