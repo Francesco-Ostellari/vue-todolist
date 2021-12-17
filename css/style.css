@@ -71,3 +71,15 @@
   font-size: 1.5em;
 }
 
+h2.line-through {
+  text-decoration: line-through;
+}
+
+.todo-text {
+  display: flex;
+  align-items: center;
+}
+
+.todo-text i {
+  margin-right: 0.3em;
+}

@@ -30,7 +30,8 @@
           <ul>
             <li v-for="(todo, index) in todos" class="todo">
               <div class="todo-text">
-                <h2>{{todo.text}}</h2>
+                <i class="far" :class="(todo.done == false) ? 'fa-square' : 'fa-check-square'" @click="todo.done = !todo.done"></i>
+                <h2 :class="(todo.done == true) ? 'line-through' : ''">{{todo.text}}</h2>
               </div>
               <i @click="deleteTodo(index)" class="far fa-times-circle todo-del"></i>
             </li>
